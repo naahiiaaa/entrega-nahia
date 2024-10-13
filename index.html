@@ -5,62 +5,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Menu</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                        <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos</a>
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
                     </li>
-                    <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Contacto</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
+                <form class="d-flex ms-auto" id="buscador">
+                    <input class="form-control me-2" type="search" placeholder="Buscar proyectos" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
-    </nav>           
-    <h2>Sobre mi</h2>
-    <p>Hola, soy Nahia Labiano Etulain tengo 18 años y soy estudiante de Administración de Sistemas Informáticos en Red
-        en CIP Cuatrovientos.
-    </p>
-    <p>Soy una persona a la que le encanta viajar y me encantaría poder visitar todo el mundo. Por ahora no he podido
-        visitar muchos países pero espero que dentro de unos años esto cambie.
-    <h2>Estudios</h2>
-    <p>En cuanto a mis estudios, hice la ESO en mi pueblo, Doneztebe, en el instituto Mendaur BHI  y después de esos 4 años
-        fui a Lekaroz BHI a hacer bachiller. Al acabar bachiller hice selectividad pero en vez de ir a la universidad
-        decidí hacer un grado superior de informática en CIP Cuatrovientos.
-    </p>
-    <h2>Proyectos</h2>
-    <h2>Contacto</h2>
-    <footer>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; Nahia Labiano Etulain - 2024</p>
+    </nav>
+    <section id="sobre-mi">
+        <div class="container mt-5">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy Nahia Labiano Etulain tengo 18 años y soy estudiante de Administración de Sistemas Informáticos
+                en Red en CIP Cuatrovientos.</p>
+            <p>Soy una persona a la que le encanta viajar y me encantaría poder visitar todo el mundo. Por ahora no he
+                podido visitar muchos países pero espero que dentro de unos años esto cambie.</p>
+            <h2>Estudios</h2>
+            <p>
+                <i class="bi bi-check-square"></i>
+                Bachiller en Lekaroz BHI
+            </p>
+            <p>
+                <i class="bi bi-arrow-clockwise"></i>
+                Grado Superior en Administración de Sistemas Informáticos en Red en CIP Cuatrovientos
+            </p>
+        </div>
+    </section>
+    <section id="proyectos" class="mt-5">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="row">
+                <!-- Proyecto I^3 -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./fotos/664635acbd6dc.jpeg" class="card-img-top" alt="Imagen de I3">
+                        <div class="card-body">
+                            <h5 class="card-title">I3</h5>
+                            <p class="card-text">Descripción breve del proyecto I3.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalI3">Más
+                                información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalI3" tabindex="-1" aria-labelledby="modalI3Label" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalI3Label">I3</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./fotos/664635acbd6dc.jpeg" class="img-fluid mb-3" alt="Imagen de I^3">
+                                Información detallada sobre el proyecto I3.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./fotos/KRISEILU2.png" class="card-img-top" alt="Imagen de Kaixomundua">
+                        <div class="card-body">
+                            <h5 class="card-title">Kaixomundua</h5>
+                            <p class="card-text">Descripción breve del proyecto Kaixomundua.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalKaixomundua">Más información</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="modalKaixomundua" tabindex="-1" aria-labelledby="modalKaixomunduaLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalKaixomunduaLabel">Kaixomundua</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./fotos/KRISEILU.png" class="img-fluid mb-3" alt="Imagen de Kaixomundua">
+                                Información detallada sobre el proyecto Kaixomundua.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="mt-5">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="formularioContacto">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-light text-center py-3 mt-5">
+        <div class="container">
+            <p>Copyright &copy; Nahia Labiano Etulain - 2024</p>
         </div>
     </footer>
 
     <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 
 </html>
