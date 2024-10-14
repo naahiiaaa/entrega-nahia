@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!--Menú--> 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Portfolio</a>
@@ -47,6 +48,7 @@
             </div>
         </div>
     </nav>
+    <!--Sobre mi-->
     <section id="sobre-mi">
         <div class="container mt-5">
             <h2>Sobre mí</h2>
@@ -78,13 +80,15 @@
             </p>
         </div>
     </section>
+    <!--Proyectos-->
     <section id="proyectos" class="mt-5">
         <div class="container">
             <h2>Proyectos</h2>
             <div class="row">
+                <!--I3-->
                 <div class="col-md-6">
                     <div class="card">
-                        <img src="./fotos/664635acbd6dc.jpeg" class="card-img-top" alt="Imagen de I3">
+                        <img src="./fotos/664635acbd6dc.jpeg" class="card-img-top" alt="I3">
                         <div class="card-body">
                             <h5 class="card-title">I3</h5>
                             <p class="card-text">
@@ -96,6 +100,7 @@
                         </div>
                     </div>
                 </div>
+                <!--I3 más información-->
                 <div class="modal fade" id="modalI3" tabindex="-1" aria-labelledby="modalI3Label" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -104,7 +109,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <img src="./fotos/664635acbd6dc.jpeg" class="img-fluid mb-3" alt="Imagen de I^3">
+                                <img src="./fotos/664635acbd6dc.jpeg" class="img-fluid mb-3" alt="I3">
                                 I3 es el proyecto que desarrollamos en colaboración entre Cuatrovientos y Salesianos Pamplona. 
                                 El propósito de este proyecto es crear soluciones tecnológicas que aborden diversas problemáticas 
                                 en el entorno educativo y comunitario, especialmente dirigidas a personas con dificultades. 
@@ -122,9 +127,10 @@
                         </div>
                     </div>
                 </div>
+                <!--Kaixomundua.eus-->
                 <div class="col-md-6">
                     <div class="card">
-                        <img src="./fotos/logotipo_kaixomundua-1.jpg" class="card-img-top" alt="Imagen de Kaixomundua">
+                        <img src="./fotos/logotipo_kaixomundua-1.jpg" class="card-img-top" alt="Kaixomundua.eus">
                         <div class="card-body">
                             <h5 class="card-title">Kaixomundua.eus</h5>
                             <p class="card-text">
@@ -135,6 +141,7 @@
                         </div>
                     </div>
                 </div>
+                <!--Kaixomundua.eus más información-->
                 <div class="modal fade" id="modalKaixomundua" tabindex="-1" aria-labelledby="modalKaixomunduaLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
@@ -144,7 +151,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <img src="./fotos/KRISEILU.png" class="img-fluid mb-3" alt="Imagen de Kaixomundua">
+                                <img src="./fotos/KRISEILU.png" class="img-fluid mb-3" alt="Kriseilu">
                                 Kriseilu es el proyecto que desarrollamos para este concurso y lo hicimos con el propósito 
                                 de promover el euskera mediante la creación de una página web. En esta página web, ofrecemos 
                                 música, programas de radio y periódicos en euskera, creando así un espacio donde los usuarios 
@@ -163,11 +170,11 @@
             </div>
         </div>
     </section>
-
+    <!--Contacto-->
     <section id="contacto" class="mt-5">
         <div class="container">
             <h2>Contacto</h2>
-            <form id="formularioContacto">
+            <form id="formularioContacto" action="mailto:nahialabiano@gmail.com" method="post" enctype="text/plain">
                 <div class="mb-3">
                     <label for="email" class="form-label">Correo electrónico</label>
                     <input type="email" class="form-control" id="email" required>
@@ -189,6 +196,7 @@
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!--Mensaje del formulario y buscador de proyectos-->
     <script>
         $(document).ready(function() {
             $('#formularioContacto').on('submit', function(event) {
