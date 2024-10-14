@@ -10,7 +10,7 @@ ENTORNO DE DESARROLLO
    -Visual Studio Code
    -GitHub desktop
 
-ESTRUCTURA D
+ESTRUCTURA
    -index.html: página principal que incluye las siguientes secciones:
        -Sobre mí: breve introducción sobre quién soy y mis intereses personales
        -Estudios: detalles sobre mi formación académica
