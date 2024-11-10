@@ -34,17 +34,15 @@
         $descripcion_extensa = $_POST['descripcion_extensa'];
 
         // Preparar la consulta SQL para insertar los datos en la tabla 'proyectos'
-        $stmt = $conn->prepare("INSERT INTO proyectos (titulo, imagen, descripcion_breve, descripcion_extensa) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssss", $titulo, $imagePath, $descripcion_breve, $descripcion_extensa);
+        $sql = "INSERT INTO proyectos (titulo, imagen, descripcion_breve, descripcion_extensa) 
+                VALUES ('$titulo',  '$imagePath', '$descripcion_breve', '$descripcion_extensa')";
 
         // Ejecutar la consulta y verificar si se realizó correctamente
-        if ($stmt->execute()) {
-            echo "Nuevo proyecto añadido con éxito.";
+        if ($conn->query($sql) === TRUE) {
+            echo "Nuevo proyecto añadido con éxito";
         } else {
-            echo "Error al insertar el proyecto: " . $stmt->error;
+            echo "Error al insertar el proyecto " . $sql . "<br>" . $conn->error;
         }
-
-        $stmt->close();
     }
 
     $conn->close();
